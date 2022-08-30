@@ -14,6 +14,7 @@ export default styled("button", {
         fontWeight: 500,
         padding: "1rem 1.4rem",
         borderRadius: "0.4rem",
+        cursor: "pointer",
       },
     },
   },
