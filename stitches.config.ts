@@ -7,6 +7,7 @@ export const { styled, theme, globalCss } = createStitches({
       dark: "#3f3f3f",
       light: "#ffffff",
       grey: "#ccc",
+      google: "#D05037",
     },
     fonts: {
       inter: "Inter",
@@ -19,6 +20,9 @@ export const globalStyles = globalCss({
     margin: 0,
     backgroundColor: "$darker",
     color: "$light",
+  },
+
+  "*": {
     fontFamily: "$inter",
   },
 });
