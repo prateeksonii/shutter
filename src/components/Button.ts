@@ -17,6 +17,18 @@ export default styled("button", {
   variants: {
     variant: {
       default: {},
+      contact: {
+        padding: "1.5rem",
+        width: "100%",
+        placeItems: "start",
+        fontSize: "1rem",
+        fontWeight: 400,
+        transition: "all 0.1s ease-in",
+
+        "&:hover": {
+          backgroundColor: "$darker",
+        },
+      },
       google: {
         backgroundColor: "$primary",
         color: "$light",
