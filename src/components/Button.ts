@@ -8,6 +8,9 @@ export default styled("button", {
   outline: "none",
   cursor: "pointer",
   padding: 0,
+  margin: 0,
+  display: "grid",
+  placeItems: "center",
   defaultVariants: {
     variant: "default",
   },

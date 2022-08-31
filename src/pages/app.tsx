@@ -1,4 +1,5 @@
 import Avatar from "@/components/Avatar";
+import Button from "@/components/Button";
 import Heading from "@/components/Heading";
 import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
@@ -7,6 +8,7 @@ import { GetServerSideProps, NextPage } from "next";
 import { DefaultSession } from "next-auth";
 import { useSession } from "next-auth/react";
 import Head from "next/head";
+import { FiPlusCircle } from "react-icons/fi";
 import { styled } from "stitches.config";
 
 type AppProps = {
@@ -35,6 +37,9 @@ const App: NextPage<AppProps> = ({ user }) => {
             >
               <Avatar size="md">{user?.name?.split(" ")[0][0]}</Avatar>
               {user?.name}
+              <Button size="lg" css={{ marginLeft: "auto" }}>
+                <FiPlusCircle />
+              </Button>
             </Heading>
           </ProfileContainer>
         </Left>

@@ -1,4 +1,4 @@
-import { FiMessageCircle } from "react-icons/fi";
+import { FiMessageCircle, FiPlusCircle } from "react-icons/fi";
 import { styled } from "stitches.config";
 import Button from "./Button";
 
