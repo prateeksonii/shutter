@@ -38,6 +38,8 @@ const App: NextPage<AppProps> = ({ user }) => {
     setSelectedContact(contactsList[0]);
   }, [contactsList]);
 
+  const name = user?.name?.split(" ")[0];
+
   return (
     <>
       <Head>
@@ -56,7 +58,7 @@ const App: NextPage<AppProps> = ({ user }) => {
                 gap: "1rem",
               }}
             >
-              <Avatar size="md">{user?.name?.split(" ")[0][0]}</Avatar>
+              <Avatar size="md">{name && name[0]}</Avatar>
               {user?.name}
               <Button
                 size="lg"
@@ -79,7 +81,7 @@ const App: NextPage<AppProps> = ({ user }) => {
         </Left>
         <Right>
           <ContactContainer>
-            {!selectedContact.contact ? (
+            {!selectedContact?.contact ? (
               <ContactLabelInput placeholder="Type contact's email address" />
             ) : (
               selectedContact.label
