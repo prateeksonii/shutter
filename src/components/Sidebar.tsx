@@ -22,4 +22,5 @@ const SidebarContainer = styled("aside", {
   alignItems: "center",
   justifyContent: "center",
   fontSize: "2rem",
+  borderRight: "1px solid $darker",
 });

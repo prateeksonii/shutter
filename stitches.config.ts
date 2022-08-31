@@ -8,7 +8,7 @@ export const { styled, theme, globalCss } = createStitches({
       dark: "#3f3f3f",
       light: "#ffffff",
       grey: "#ccc",
-      google: "#D05037",
+      primary: "#D05037",
     },
     fonts: {
       inter: "Inter",

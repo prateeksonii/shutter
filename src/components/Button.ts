@@ -15,7 +15,7 @@ export default styled("button", {
     variant: {
       default: {},
       google: {
-        backgroundColor: "$google",
+        backgroundColor: "$primary",
         color: "$light",
         border: "none",
         outline: "none",

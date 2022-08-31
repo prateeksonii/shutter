@@ -9,7 +9,9 @@ export const secureRoute =
 
     if (session) {
       return {
-        props: {},
+        props: {
+          user: session.user,
+        },
       };
     }
 
